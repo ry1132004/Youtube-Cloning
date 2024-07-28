@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sidebar-hidden">
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image">
+            <h2 class="logo-text">CodeTube</h2>
+          </a>
+        </div>
+        
+        <div class="nav-section nav-center">
+          <form action="#" class="search-form">
+            <input type="search" placeholder="Search" class="search-input" required>
+            <button class="nav-button search-button">
+              <i class="uil uil-search"></i>
+            </button>
+          </form>
+          <button class="nav-button mic-button">
+            <i class="uil uil-microphone"></i>
+          </button>
+        </div>
+        
+        <div class="nav-section nav-right">
+          <button class="nav-button search-button">
+            <i class="uil uil-search"></i>
+          </button>
+          <button class="nav-button theme-button">
+            <i class="uil uil-moon"></i>
+          </button>
+          <img src="images/user.jpg" alt="User Image" class="user-image">
+        </div>
+      </nav>
+    </header>
+    
+    <main class="main-layout">
+      <div class="screen-overlay"></div>
+
+      <aside class="sidebar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image">
+            <h2 class="logo-text">CodeTube</h2>
+          </a>
+        </div>
+  
+        <div class="links-container">
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="uil uil-estate"></i> Home
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-video"></i> Shorts
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-tv-retro"></i> Subscriptions
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <h4 class="section-title">You</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-user-square"></i> Your channel
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-history"></i> History
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-clock"></i> Watch later
+            </a>
+          </div>
+          <div class="section-separator"></div>
+          
+          <div class="link-section">
+            <h4 class="section-title">Explore</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-fire"></i> Trending
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-file-medical-alt"></i> Frontend Coding
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-file-medical-alt"></i> Backend Coding
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-file-medical-alt"></i> Full Stack Coding
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <h4 class="section-title">More from YouTube</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-shield-plus"></i> YouTube Plus
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-headphones-alt"></i> YouTube Music
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-airplay"></i> YouTube Kids
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="uil uil-setting"></i> Settings
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-file-medical-alt"></i> Report
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-question-circle"></i> Help
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-exclamation-triangle"></i> Feedback
+            </a>
+          </div>
+        </div>
+      </aside>
+  
+      <div class="content-wrapper">
+        <div class="category-list">
+          <button class="category-button active">All</button>
+          <button class="category-button">C++</button>
+          <button class="category-button">Website Development</button>
+          <button class="category-button">Java</button>
+          <button class="category-button">Node.js</button>
+          <button class="category-button">JavaScript</button>
+          <button class="category-button">React.js</button>
+          <button class="category-button">TypeScript</button>
+          <button class="category-button">Coding</button>
+          <button class="category-button">Next.js</button>
+          <button class="category-button">Data analysis</button>
+          <button class="category-button">Web design</button>
+          <button class="category-button">HTML</button>
+          <button class="category-button">CSS</button>
+          <button class="category-button">Express.js</button>
+        </div>
+        
+        <div class="video-list">
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/jpeg;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel-name">CodingThon</p>
+                <p class="views">27K Views • 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/qOO6lVMhmGc/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">23:45</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAA3lBMVEXsaV8NDQ0QEBAAAAATExUZGRkUFBQ5OTssLC4wMDImJijral4zMzUXFxdSKyrvamIhISOvnZYABgk+PkAAAAb/49f/39D/18jLX1thR0bza2HqaWL/59m3nZIIJib/287/0cBlNTDzalvcal2zWlp8T0tfQURYPTx2QkOcU03WYFneamSLU08rPDwmLjAYKClOQ0OkUEy+Yl4AGR8AExy3WVEQHByXSEiNSUcnGRpxS0VGJiQeMjOvk42ikIpVS0eRg37Quq8IABBqY1/at6mDdnHtw7SEbWVyX1h4ODVo/uH4AAACx0lEQVRoge2Wb1eiQBSHgYuaDAoNiDSjIbZbiVublZZbiW5/Nr//F9o7g27UeuqAvdizZ5434jn4+OPOvcNomkKhUCgUCoVC8Y/icJL/wj9RzVifra8J0Rz23s2F5Qdfvu5JDg+Pjo6OB4n2SX7Cht+8E8+rIbZt1+unp99Pj0NGNPLxjz+ChWc1L3Nn8h3EdUeMONu7zz3Py+WWbsuyLgYsJydIYTUnQ+9V7Hqmtiz3cpyrO8c/KvwgnOxtim25rjuZ5Bqy7yTFi8TCk7U6F9uVXF4xqWe45Nf6VCu6wKT/o7YxtutWKo2pQ0Qz8TAG8P2DwpPFpVrqKiZCEZ/6vm+inIZEY3x0A9TQdUh40SUd3tZqO+ls9xV3d3ezlDYa/thJliaqDZT7w6JuJ7y162etDtJqtYIoWBMFKa3S4yZQXap12ize9ii35p1osdtFojbSleAniCKZRubWYcSKykm4X3fnrU7qWz99mKF9AQAmTJ9QbqyQ7mbR2CK5kHei1uIeXOFuR7s2nHXbvd5armduXmInC/d3MHkUgN0Vpe4EUTtapPDwRy7ddMBIiS0e5ZN5EEVRJwgeHj2w7xcif28l1zPodFAyuZQHIi81K4YP1qzXk3L9BQq4oCXklpti581sMHBsqlWzqkNj/tRr/xJyurb7RlIi+YVlmemjC5VK5hboAM/P6Ibr5io+wLhMWS5w8E29kblNKRe1BpC9zXFXEdyIF1NhhpfZJrWOnWs/OTgsXMZxPC6znBrhRuZG9QZ5SByHMadUHyIsnsjYpnTnzaIB5cCTkmrcz8f0ZSGN13K47m93OOLsZtLIKvImN7Yh3/r9P8Stb4Ma5+Z8+3MLC6X9b/cV2/7U5bBw6utv1DrQEuO+CcaXpk9XiAsAGiefdRh1SDJeNl+IR4lT4oD1jl9zVmChWInjlUKhUCgUCoVC8d/wG/cZSkIm4IzyAAAAAElFTkSuQmCC" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How to make Responsive Card Slider in HTML CSS & JavaScript</h2>
+                <p class="channel-name">ResponsiveNinja</p>
+                <p class="views">42K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/YEloDYy3DTg/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">29:43</p>
+            </div>
+            <div class="video-info">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTJbagqZHfuuzyIyiXwbJ0afU4Gyz7xl-9yatcG5fVLJX98ZJwGQzWl0GqQ&s" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create A Login & Registration Form in HTML CSS and JavaScript</h2>
+                <p class="channel-name">FrontendFever</p>
+                <p class="views">68K Views • 9 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/hSSdc8vKP1I/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">38:45</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/jpeg;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build Hangman Game in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodingThon</p>
+                <p class="views">57K Views • 11 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/coj-l7IrwGU/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">19:27</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/jpeg;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How to Make Chrome Extension in HTML CSS & JavaScript</h2>
+                <p class="channel-name">CodingGuru</p>
+                <p class="views">24K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/6QE8dXq9SOE/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">16:24</p>
+            </div>
+            <div class="video-info">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTJbagqZHfuuzyIyiXwbJ0afU4Gyz7xl-9yatcG5fVLJX98ZJwGQzWl0GqQ&s" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create A Draggable Card Slider in HTML CSS and Vanilla JavaScript</h2>
+                <p class="channel-name">FrontendFever</p>
+                <p class="views">14.2K Views • 4 days ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/q4RgxiDM6v0/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">37:13</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAA3lBMVEXsaV8NDQ0QEBAAAAATExUZGRkUFBQ5OTssLC4wMDImJijral4zMzUXFxdSKyrvamIhISOvnZYABgk+PkAAAAb/49f/39D/18jLX1thR0bza2HqaWL/59m3nZIIJib/287/0cBlNTDzalvcal2zWlp8T0tfQURYPTx2QkOcU03WYFneamSLU08rPDwmLjAYKClOQ0OkUEy+Yl4AGR8AExy3WVEQHByXSEiNSUcnGRpxS0VGJiQeMjOvk42ikIpVS0eRg37Quq8IABBqY1/at6mDdnHtw7SEbWVyX1h4ODVo/uH4AAACx0lEQVRoge2Wb1eiQBSHgYuaDAoNiDSjIbZbiVublZZbiW5/Nr//F9o7g27UeuqAvdizZ5434jn4+OPOvcNomkKhUCgUCoVC8Y/icJL/wj9RzVifra8J0Rz23s2F5Qdfvu5JDg+Pjo6OB4n2SX7Cht+8E8+rIbZt1+unp99Pj0NGNPLxjz+ChWc1L3Nn8h3EdUeMONu7zz3Py+WWbsuyLgYsJydIYTUnQ+9V7Hqmtiz3cpyrO8c/KvwgnOxtim25rjuZ5Bqy7yTFi8TCk7U6F9uVXF4xqWe45Nf6VCu6wKT/o7YxtutWKo2pQ0Qz8TAG8P2DwpPFpVrqKiZCEZ/6vm+inIZEY3x0A9TQdUh40SUd3tZqO+ls9xV3d3ezlDYa/thJliaqDZT7w6JuJ7y162etDtJqtYIoWBMFKa3S4yZQXap12ize9ii35p1osdtFojbSleAniCKZRubWYcSKykm4X3fnrU7qWz99mKF9AQAmTJ9QbqyQ7mbR2CK5kHei1uIeXOFuR7s2nHXbvd5armduXmInC/d3MHkUgN0Vpe4EUTtapPDwRy7ddMBIiS0e5ZN5EEVRJwgeHj2w7xcif28l1zPodFAyuZQHIi81K4YP1qzXk3L9BQq4oCXklpti581sMHBsqlWzqkNj/tRr/xJyurb7RlIi+YVlmemjC5VK5hboAM/P6Ibr5io+wLhMWS5w8E29kblNKRe1BpC9zXFXEdyIF1NhhpfZJrWOnWs/OTgsXMZxPC6znBrhRuZG9QZ5SByHMadUHyIsnsjYpnTnzaIB5cCTkmrcz8f0ZSGN13K47m93OOLsZtLIKvImN7Yh3/r9P8Stb4Ma5+Z8+3MLC6X9b/cV2/7U5bBw6utv1DrQEuO+CcaXpk9XiAsAGiefdRh1SDJeNl+IR4lT4oD1jl9zVmChWInjlUKhUCgUCoVC8d/wG/cZSkIm4IzyAAAAAElFTkSuQmCC" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How to make Responsive Image Slider in HTML CSS and JavaScript</h2>
+                <p class="channel-name">ResponsiveNinja</p>
+                <p class="views">1M Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/DLs1X9T1GcY/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">9:27</p>
+            </div>
+            <div class="video-info">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTJbagqZHfuuzyIyiXwbJ0afU4Gyz7xl-9yatcG5fVLJX98ZJwGQzWl0GqQ&s" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create Text Typing Effect in HTML CSS & Vanilla JavaScript</h2>
+                <p class="channel-name">FrontendFever</p>
+                <p class="views">17K Views • 10 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/PsNaoDhzQm0/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">25:27</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAA3lBMVEXsaV8NDQ0QEBAAAAATExUZGRkUFBQ5OTssLC4wMDImJijral4zMzUXFxdSKyrvamIhISOvnZYABgk+PkAAAAb/49f/39D/18jLX1thR0bza2HqaWL/59m3nZIIJib/287/0cBlNTDzalvcal2zWlp8T0tfQURYPTx2QkOcU03WYFneamSLU08rPDwmLjAYKClOQ0OkUEy+Yl4AGR8AExy3WVEQHByXSEiNSUcnGRpxS0VGJiQeMjOvk42ikIpVS0eRg37Quq8IABBqY1/at6mDdnHtw7SEbWVyX1h4ODVo/uH4AAACx0lEQVRoge2Wb1eiQBSHgYuaDAoNiDSjIbZbiVublZZbiW5/Nr//F9o7g27UeuqAvdizZ5434jn4+OPOvcNomkKhUCgUCoVC8Y/icJL/wj9RzVifra8J0Rz23s2F5Qdfvu5JDg+Pjo6OB4n2SX7Cht+8E8+rIbZt1+unp99Pj0NGNPLxjz+ChWc1L3Nn8h3EdUeMONu7zz3Py+WWbsuyLgYsJydIYTUnQ+9V7Hqmtiz3cpyrO8c/KvwgnOxtim25rjuZ5Bqy7yTFi8TCk7U6F9uVXF4xqWe45Nf6VCu6wKT/o7YxtutWKo2pQ0Qz8TAG8P2DwpPFpVrqKiZCEZ/6vm+inIZEY3x0A9TQdUh40SUd3tZqO+ls9xV3d3ezlDYa/thJliaqDZT7w6JuJ7y162etDtJqtYIoWBMFKa3S4yZQXap12ize9ii35p1osdtFojbSleAniCKZRubWYcSKykm4X3fnrU7qWz99mKF9AQAmTJ9QbqyQ7mbR2CK5kHei1uIeXOFuR7s2nHXbvd5armduXmInC/d3MHkUgN0Vpe4EUTtapPDwRy7ddMBIiS0e5ZN5EEVRJwgeHj2w7xcif28l1zPodFAyuZQHIi81K4YP1qzXk3L9BQq4oCXklpti581sMHBsqlWzqkNj/tRr/xJyurb7RlIi+YVlmemjC5VK5hboAM/P6Ibr5io+wLhMWS5w8E29kblNKRe1BpC9zXFXEdyIF1NhhpfZJrWOnWs/OTgsXMZxPC6znBrhRuZG9QZ5SByHMadUHyIsnsjYpnTnzaIB5cCTkmrcz8f0ZSGN13K47m93OOLsZtLIKvImN7Yh3/r9P8Stb4Ma5+Z8+3MLC6X9b/cV2/7U5bBw6utv1DrQEuO+CcaXpk9XiAsAGiefdRh1SDJeNl+IR4lT4oD1jl9zVmChWInjlUKhUCgUCoVC8d/wG/cZSkIm4IzyAAAAAElFTkSuQmCC" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create Responsive Image Slider in HTML CSS and JavaScript</h2>
+                <p class="channel-name">ResponsiveNinja</p>
+                <p class="views">157K Views • 9 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/20Qb7pNMv-4/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">12:24</p>
+            </div>
+            <div class="video-info">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTJbagqZHfuuzyIyiXwbJ0afU4Gyz7xl-9yatcG5fVLJX98ZJwGQzWl0GqQ&s" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Make A Flipping Card UI Design in HTML & CSS</h2>
+                <p class="channel-name">FrontendFever</p>
+                <p class="views">85K Views • 2 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/_RSaI2CxlXU/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">30:20</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/jpeg;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Easy way to do Multiple File Uploading using HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodingThon</p>
+                <p class="views">7.4K Views • 3 weeks ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/cHkN82X3KNU/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">11:13</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAA3lBMVEXsaV8NDQ0QEBAAAAATExUZGRkUFBQ5OTssLC4wMDImJijral4zMzUXFxdSKyrvamIhISOvnZYABgk+PkAAAAb/49f/39D/18jLX1thR0bza2HqaWL/59m3nZIIJib/287/0cBlNTDzalvcal2zWlp8T0tfQURYPTx2QkOcU03WYFneamSLU08rPDwmLjAYKClOQ0OkUEy+Yl4AGR8AExy3WVEQHByXSEiNSUcnGRpxS0VGJiQeMjOvk42ikIpVS0eRg37Quq8IABBqY1/at6mDdnHtw7SEbWVyX1h4ODVo/uH4AAACx0lEQVRoge2Wb1eiQBSHgYuaDAoNiDSjIbZbiVublZZbiW5/Nr//F9o7g27UeuqAvdizZ5434jn4+OPOvcNomkKhUCgUCoVC8Y/icJL/wj9RzVifra8J0Rz23s2F5Qdfvu5JDg+Pjo6OB4n2SX7Cht+8E8+rIbZt1+unp99Pj0NGNPLxjz+ChWc1L3Nn8h3EdUeMONu7zz3Py+WWbsuyLgYsJydIYTUnQ+9V7Hqmtiz3cpyrO8c/KvwgnOxtim25rjuZ5Bqy7yTFi8TCk7U6F9uVXF4xqWe45Nf6VCu6wKT/o7YxtutWKo2pQ0Qz8TAG8P2DwpPFpVrqKiZCEZ/6vm+inIZEY3x0A9TQdUh40SUd3tZqO+ls9xV3d3ezlDYa/thJliaqDZT7w6JuJ7y162etDtJqtYIoWBMFKa3S4yZQXap12ize9ii35p1osdtFojbSleAniCKZRubWYcSKykm4X3fnrU7qWz99mKF9AQAmTJ9QbqyQ7mbR2CK5kHei1uIeXOFuR7s2nHXbvd5armduXmInC/d3MHkUgN0Vpe4EUTtapPDwRy7ddMBIiS0e5ZN5EEVRJwgeHj2w7xcif28l1zPodFAyuZQHIi81K4YP1qzXk3L9BQq4oCXklpti581sMHBsqlWzqkNj/tRr/xJyurb7RlIi+YVlmemjC5VK5hboAM/P6Ibr5io+wLhMWS5w8E29kblNKRe1BpC9zXFXEdyIF1NhhpfZJrWOnWs/OTgsXMZxPC6znBrhRuZG9QZ5SByHMadUHyIsnsjYpnTnzaIB5cCTkmrcz8f0ZSGN13K47m93OOLsZtLIKvImN7Yh3/r9P8Stb4Ma5+Z8+3MLC6X9b/cV2/7U5bBw6utv1DrQEuO+CcaXpk9XiAsAGiefdRh1SDJeNl+IR4lT4oD1jl9zVmChWInjlUKhUCgUCoVC8d/wG/cZSkIm4IzyAAAAAElFTkSuQmCC" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build A Responsive Calculator in HTML CSS & JavaScript</h2>
+                <p class="channel-name">ResponsiveNinja</p>
+                <p class="views">30K Views • 2 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/0_Lwi5ucGwM/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">39:43</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/jpeg;base64,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" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build A Currency Converter using ReactJS</h2>
+                <p class="channel-name">CodingThon</p>
+                <p class="views">7.2K • 2 weeks ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/AyV954yKRSw/maxresdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+              <p class="duration">1:37:13</p>
+            </div>
+            <div class="video-info">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAA3lBMVEXsaV8NDQ0QEBAAAAATExUZGRkUFBQ5OTssLC4wMDImJijral4zMzUXFxdSKyrvamIhISOvnZYABgk+PkAAAAb/49f/39D/18jLX1thR0bza2HqaWL/59m3nZIIJib/287/0cBlNTDzalvcal2zWlp8T0tfQURYPTx2QkOcU03WYFneamSLU08rPDwmLjAYKClOQ0OkUEy+Yl4AGR8AExy3WVEQHByXSEiNSUcnGRpxS0VGJiQeMjOvk42ikIpVS0eRg37Quq8IABBqY1/at6mDdnHtw7SEbWVyX1h4ODVo/uH4AAACx0lEQVRoge2Wb1eiQBSHgYuaDAoNiDSjIbZbiVublZZbiW5/Nr//F9o7g27UeuqAvdizZ5434jn4+OPOvcNomkKhUCgUCoVC8Y/icJL/wj9RzVifra8J0Rz23s2F5Qdfvu5JDg+Pjo6OB4n2SX7Cht+8E8+rIbZt1+unp99Pj0NGNPLxjz+ChWc1L3Nn8h3EdUeMONu7zz3Py+WWbsuyLgYsJydIYTUnQ+9V7Hqmtiz3cpyrO8c/KvwgnOxtim25rjuZ5Bqy7yTFi8TCk7U6F9uVXF4xqWe45Nf6VCu6wKT/o7YxtutWKo2pQ0Qz8TAG8P2DwpPFpVrqKiZCEZ/6vm+inIZEY3x0A9TQdUh40SUd3tZqO+ls9xV3d3ezlDYa/thJliaqDZT7w6JuJ7y162etDtJqtYIoWBMFKa3S4yZQXap12ize9ii35p1osdtFojbSleAniCKZRubWYcSKykm4X3fnrU7qWz99mKF9AQAmTJ9QbqyQ7mbR2CK5kHei1uIeXOFuR7s2nHXbvd5armduXmInC/d3MHkUgN0Vpe4EUTtapPDwRy7ddMBIiS0e5ZN5EEVRJwgeHj2w7xcif28l1zPodFAyuZQHIi81K4YP1qzXk3L9BQq4oCXklpti581sMHBsqlWzqkNj/tRr/xJyurb7RlIi+YVlmemjC5VK5hboAM/P6Ibr5io+wLhMWS5w8E29kblNKRe1BpC9zXFXEdyIF1NhhpfZJrWOnWs/OTgsXMZxPC6znBrhRuZG9QZ5SByHMadUHyIsnsjYpnTnzaIB5cCTkmrcz8f0ZSGN13K47m93OOLsZtLIKvImN7Yh3/r9P8Stb4Ma5+Z8+3MLC6X9b/cV2/7U5bBw6utv1DrQEuO+CcaXpk9XiAsAGiefdRh1SDJeNl+IR4lT4oD1jl9zVmChWInjlUKhUCgUCoVC8d/wG/cZSkIm4IzyAAAAAElFTkSuQmCC" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Responsive Admin Dashboard Panel in HTML CSS and JavaScript</h2>
+                <p class="channel-name">ResponsiveNinja
+                </p>
+                <p class="views">161K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
